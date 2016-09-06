@@ -1,0 +1,481 @@
+#wrapper {
+
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+#page-mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    z-index: 998;
+}
+
+@font-face {
+    font-family: navFont;
+    font-style: normal;
+    font-weight: 400;
+    src: url()
+ }
+
+
+@font-face {
+    font-family: contentFont;
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+
+/*----------header----------*/
+
+header{
+
+    background-color: #78DDFF;
+    background: -webkit-linear-gradient(#78DDFF, #F4F4F4);
+    background: -o-linear-gradient(#78DDFF, #F4F4F4);
+    background: -moz-linear-gradient(#78DDFF, #F4F4F4);
+    background: linear-gradient(#78DDFF, #F4F4F4);
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+
+}
+
+#menu {
+
+    display: none;
+    float: left;
+    padding-top: 5px;
+    padding-left: 25px;
+    font-size: 40px;
+    color: gray;
+}
+
+#menu:hover {
+
+    cursor: pointer;
+
+}
+
+#sidenav {
+    overflow: hidden;
+    font-size: 24px;
+    font-family: "微軟正黑體";
+    width: 0px;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    background-color: rgb(51, 51, 51);
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+#sidenav ul {
+
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    table-layout: fixed;
+    text-align: left;
+}
+
+
+
+#sidenav li {
+
+    list-style-type: none;
+    height: 50px;
+    margin: 0 auto;
+    padding: 15px 15px 0 15px;
+
+}
+
+#sidenav a {
+
+    display: block;
+    text-decoration: none;
+    color: rgb(210, 210 ,210);
+
+}
+
+#sidenav li:hover {
+
+    background-color: white;
+    cursor: pointer;
+}
+
+header img {
+
+    display: inline-block;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+header nav {
+
+    display: inline-block;
+    padding-top: 60px;
+    padding-left: 0px;
+    font-family: "微軟正黑體";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 300%;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+
+}
+
+header ul {
+
+    margin: 0;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+
+}
+
+
+
+header li {
+
+    list-style-type: none;
+    display: table-cell;
+    width: 160px;
+    height: auto;
+    vertical-align: bottom;
+}
+
+header nav a {
+
+    display: block;
+    text-decoration: none;
+    color: black;
+
+}
+
+.underline:hover {
+  font-size: 30px;
+    color: #005A87;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #005A87;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.headersmall {
+
+   text-align: center;;
+   magin: 0 auto;
+   left: -20px;
+   top: 0;
+   height: 85px;
+
+}
+
+
+
+.logosmall {
+
+  padding: 10px 0 0 5px;
+  position: relative;
+  height: 75px;
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+/*--------for small screen--------*/
+
+@media (max-width: 1136px) {
+
+
+header {
+    text-align: left;
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 85px;
+    overflow: hidden;;
+    text-align: center;
+}
+
+header img {
+    left: -20px;
+    position: relative;;
+    height: 75px;
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+header nav {
+
+    display: none;
+
+}
+
+#menu {
+
+    display: inline-block;
+    float: left;
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 40px;
+
+}
+
+#menu:hover {
+
+    cursor: pointer;
+
+}
+
+
+}
+
+
+
+/*----------content----------*/
+
+body {
+
+    background-color: #F4F4F4;
+
+}
+
+.content {
+
+    text-align: center;
+    padding: 170px 0 0 0;
+    margin: 0 auto;
+
+}
+
+/*----------news slider----------*/
+
+.news {
+
+    width: 100%;
+    text-align: center;
+    height: 450px;
+    position: relative;
+}
+
+.slider {
+
+    overflow: hidden;
+    top: 0;
+
+}
+
+.active-slide img {
+
+    width: 1040px;
+    padding: 0 ;
+    z-index: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+.slide img {
+
+    display: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+.slide {
+
+  display: none;
+
+}
+
+.dot-nav {
+
+    height: 20%;
+    overflow: hidden;
+    z-index: 10;
+    position: relative;
+    bottom: 8vh;
+}
+
+.dot-nav li {
+
+    type: none;
+    display: inline-block;
+    padding: 0;
+
+}
+
+.dot-nav li img{
+
+    text-align: center;
+    padding: 0 10px 0 0;
+    width: 30%;
+
+}
+
+.dot:hover {
+
+    cursor: pointer;
+
+}
+
+
+/*--------products slider--------*/
+
+.products {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  }
+
+.banner h2 {
+  font-family: "微軟正黑體";
+  font-size: 36px;
+  color: gray;
+  font-weight: 300;
+
+}
+
+.banner h2 img {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+#pdSlider {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#pdSlider ul.pd {
+  position: absolute;
+  z-index: 5;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  left: 20px;
+  top: 0;
+}
+
+#pdSlider ul.pd li {
+    position: relative;
+    display: inline-block;
+    margin: 0 38px;
+    width: 260px;
+    height: 500px;
+    line-height: 600px;
+    left: 0;
+}
+
+#pdTag {
+  position: relative;
+  overflow: hidden;
+}
+
+#pdSlider ul.tag {
+  left: 20px;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 10;
+  position: absolute;
+  top: 240px;
+  list-style: none;
+  text-align: center;
+}
+
+#pdSlider ul.tag li {
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(33, 33, 33, .8);
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin: 60px 38px;
+    padding: 5px 10px ;
+    height: 55px;
+    line-height: 25px;
+    vertical-align: middle;
+    width: 240px;
+    text-align: left;
+
+}
+
+.pdLeft {
+  position: absolute;
+  left: 0px;
+  z-index: 20;
+  padding-top: 150px;
+}
+
+.pdRight {
+  position: absolute;
+  right: 0px;
+  z-index: 20;
+  padding-top: 150px;
+}
+
+#pdLeft, #pdRight {
+
+  width: 45px;
+  cursor: pointer;
+
+}
+
+#pd1, #pd2, #pd3, #pd4, #pd5{
+
+    margin: 0 auto;
+    width: 260px;
+
+}
+
+#pd1:hover , #pd2:hover , #pd3:hover, #pd4:hover, #pd5:hover {
+
+    box-shadow: 0px 0px 60px rgb(93, 137, 137);
+
+}

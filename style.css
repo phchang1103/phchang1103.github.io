@@ -1,6 +1,6 @@
 #wrapper {
 
-    width: 1300px;
+    width: 1280px;
     margin: 0 auto;
 
 }
@@ -189,7 +189,7 @@ header li {
 
     list-style-type: none;
     display: table-cell;
-    width: 200px;
+    width: 180px;
     height: auto;
     vertical-align: bottom;
 }

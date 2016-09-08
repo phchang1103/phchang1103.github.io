@@ -1,6 +1,6 @@
 #wrapper {
 
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
 
 }
@@ -82,7 +82,10 @@ header{
     margin: 0 auto;
     left: 0;
     top: 0;
-    background-color: rgb(51, 51, 51);
+    background-color: #446D8C;
+    background: -webkit-linear-gradient(#446D8C, #F4F4F4);
+    background: -o-linear-gradient(#446D8C, #F4F4F4);
+    background: linear-gradient(#446D8C, #F4F4F4);
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
     -ms-transition: width 0.3s;
@@ -114,20 +117,35 @@ header{
 
     display: block;
     text-decoration: none;
-    color: rgb(210, 210 ,210);
+    color: white;
 
 }
 
 #sidenav li:hover {
 
-    background-color: white;
+    background-color: #005A87;
     cursor: pointer;
+}
+
+
+#sidenav ul li img {
+    height: 28px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 15px 2px 5px;
+}
+
+#sideLogo {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    width: 150px;
 }
 
 header img {
 
     display: inline-block;
-
+    margin: 0 40px 0 0;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -142,7 +160,7 @@ header nav {
     padding-top: 60px;
     padding-left: 0px;
     font-family: "微軟正黑體";
-    font-weight: 400;
+    font-weight: 600;
     font-size: 26px;
     line-height: 300%;
     -webkit-transition: all 0.4s;
@@ -169,7 +187,7 @@ header li {
 
     list-style-type: none;
     display: table-cell;
-    width: 160px;
+    width: 175px;
     height: auto;
     vertical-align: bottom;
 }
@@ -196,7 +214,7 @@ header nav a {
 
 .headersmall {
 
-   text-align: center;;
+   text-align: center;
    magin: 0 auto;
    left: -20px;
    top: 0;
@@ -204,12 +222,11 @@ header nav a {
 
 }
 
-
-
 .logosmall {
 
   padding: 10px 0 0 5px;
   position: relative;
+  left: -20px;
   height: 75px;
   -moz-transform: scale(0.9);
   -webkit-transform: scale(0.9);
@@ -261,9 +278,7 @@ header nav {
 
 }
 
-
 }
-
 
 
 /*----------content----------*/
@@ -294,5 +309,10 @@ body {
 .content h4 {
     line-height: 20px;
     font-size: 18px;
+
+}
+
+#category {
+    margin: 25px 75px;
 
 }

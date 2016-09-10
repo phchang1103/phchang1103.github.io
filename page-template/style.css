@@ -297,37 +297,3 @@ body {
     font-family: "微軟正黑體";
 
 }
-
-#title {
-    vertical-align: bottom;
-}
-
-.content h2 {
-    line-height: 5px;
-}
-
-.content h4 {
-    line-height: 20px;
-    font-size: 18px;
-}
-
-#category {
-    width: 500px;
-    margin: 15px 15px;
-}
-
-.detailContainer {
-    top: 425px;
-    height: 405px;
-    width: 1070px;
-    margin-left: 70px;
-    position: absolute;
-    z-index: 10;
-    vertical-align: bottom;
-    text-align: right;
-}
-
-#detailAbout, #detailPurchase, #detailShipping, #detailPostSales {
-    z-index: 5;
-    width: 75px;
-}

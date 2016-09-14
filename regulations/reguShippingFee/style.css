@@ -297,3 +297,33 @@ body {
     font-family: "微軟正黑體";
 
 }
+
+#title {
+    width: 250px;
+    margin: 0 0 35px 0;
+}
+
+#barTitle {
+    width: 400px;
+    margin: 35px 100px;
+}
+
+#description {
+    display: inline-block;
+    font-family: "微軟正黑體";
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF5900;
+}
+
+#description tr td {
+    width: 475px;
+    text-align: left;
+    padding-left: 125px;
+    vertical-align: top;
+}
+
+#mark {
+    display: inline;
+    color: #C80023;
+}

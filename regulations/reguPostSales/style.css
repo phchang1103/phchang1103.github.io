@@ -324,5 +324,11 @@ p {
 #mark {
     font-size: 26px;
     color: #C30027;
+}
 
+#alert {
+    font-size: 26px;
+    color: #C30027;
+    text-align: center;
+    margin: 40px 0;
 }

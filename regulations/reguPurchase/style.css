@@ -297,3 +297,81 @@ body {
     font-family: "微軟正黑體";
 
 }
+
+#tableTitle {
+    position: absolute;
+    z-index: 5;
+    text-align: left;
+    margin-top: -26px;
+    margin-left: 135px;
+    margin-bottom: 0;
+    width: 1120px;
+    border-collapse: collapse;
+
+}
+
+#tableTitle tr td {
+    height: 135px;
+    margin-bottom: 0;
+    vertical-align: bottom;
+}
+
+
+#subtitle {
+    font-size: 26px;
+    color: #5A0087;
+    font-weight: 600;
+    text-shadow: 1px 0px white, 0px 1px white, -1px 0px white, 0px -1px white,
+    1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white, 0 0 10px black;
+
+}
+
+#tableContent {
+    border-collapse: separate;
+    display: inline-block;
+    border-spacing: 100px 60px;
+    margin: 10px 0 0 0;
+}
+
+
+#tableContent tr td{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 30px 20px 14px 30px;
+    border: 3px solid #D6BFE1;
+
+}
+
+#tableContent a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#arrow1, #arrow2, #arrow3 {
+    display: inline;
+    color: #005A87;
+}
+
+#link1, #link2, #link3  {
+    display: inline;
+
+}
+
+#link1:hover, #arrow1:hover, #link2:hover, #arrow2:hover, #link3:hover, #arrow3:hover {
+    cursor: pointer;
+}
+
+
+#transferForm {
+    font-family: "微軟正黑體";
+    font-size: 18px;
+    font-weight: 600;
+    color: #C30027;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 340px;
+    z-index: 10;
+    text-decoration: none;
+
+}

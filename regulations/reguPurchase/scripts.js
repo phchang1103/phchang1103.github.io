@@ -41,9 +41,66 @@ var sidenav = function() {
 
 }
 
+var hover = function() {
 
+    $('#arrow1').hover(
+      function(){
+        $('#link1').css({'color':'#C30027'});
+        $(this).css({'color':'#C30027'});
+      },
+      function(){
+        $('#link1').css({'color':'initial'});
+        $(this).css({'color':'#005A87'});
+      });
+    $('#arrow2').hover(
+      function(){
+        $('#link2').css({'color':'#C30027'});
+        $(this).css({'color':'#C30027'});
+      },
+      function(){
+        $('#link2').css({'color':'initial'});
+        $(this).css({'color':'#005A87'});
+      });
+    $('#arrow3').hover(
+      function(){
+        $('#link3').css({'color':'#C30027'});
+        $(this).css({'color':'#C30027'});
+      },
+      function(){
+        $('#link3').css({'color':'initial'});
+        $(this).css({'color':'#005A87'});
+      });
+    $('#link1').hover(
+      function(){
+        $('#arrow1').css({'color':'#C30027'});
+        $(this).css({'color':'#C30027'});
+      },
+      function(){
+        $('#arrow1').css({'color':'#005A87'});
+        $(this).css({'color':'initial'});
+      });
+    $('#link2').hover(
+      function(){
+        $('#arrow2').css({'color':'#C30027'});
+        $(this).css({'color':'#C30027'});
+      },
+      function(){
+        $('#arrow2').css({'color':'#005A87'});
+        $(this).css({'color':'initial'});
+      });
+    $('#link3').hover(
+      function(){
+        $('#arrow3').css({'color':'#C30027'});
+        $(this).css({'color':'#C30027'});
+      },
+      function(){
+        $('#arrow3').css({'color':'#005A87'});
+        $(this).css({'color':'initial'});
+      });
+}
 
 
 
 $(document).ready(scroll);
 $(document).ready(sidenav);
+$(document).ready(hover);

@@ -399,6 +399,19 @@ body {
   padding: 0 10px;
 }
 
+#newpd {
+  display: inline;
+  vertical-align: bottom;
+  font-size: 36px;
+  color: black;
+  font-family: "微軟正黑體";
+  font-weight: 600;
+  text-shadow: 1px 0px white, 0px 1px white, -1px 0px white, 0px -1px white,
+  1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white, 0 0 10px black;
+
+
+}
+
 #pdSlider {
   position: relative;
   overflow: hidden;

@@ -298,8 +298,13 @@ body {
 
 }
 
-#title {
-    vertical-align: bottom;
+#titleRegu {
+    margin: 0;
+    font-size: 36px;
+    color: black;
+    text-shadow: 1px 0px white, 0px 1px white, -1px 0px white, 0px -1px white,
+    1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white, 0 0 12px black;
+
 }
 
 .content h2 {
@@ -317,7 +322,7 @@ body {
 }
 
 .detailContainer {
-    top: 425px;
+    top: 410px;
     height: 405px;
     width: 1070px;
     margin-left: 70px;

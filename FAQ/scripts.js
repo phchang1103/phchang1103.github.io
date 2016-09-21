@@ -49,7 +49,7 @@ var drawer = function() {
          $('.A').animate({height: 0}, 100, 'linear');
          $('.A').animate({margin: 0}, 100, 'linear');
          var autoHeight = targetA.css('height', 'auto').height();
-         targetA.animate({margin: '20px 0'}, 200, 'linear');
+         targetA.animate({margin: '23px 0'}, 200, 'linear');
          targetA.height(0).animate({height: autoHeight}, 200, 'linear');
        }
        else {

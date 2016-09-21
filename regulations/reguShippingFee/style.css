@@ -305,7 +305,7 @@ body {
 
 #barTitle {
     width: 400px;
-    margin: 35px 80px;
+    margin: 35px 100px;
 }
 
 #description {
@@ -317,9 +317,9 @@ body {
 }
 
 #description tr td {
-    width: 455px;
+    width: 475px;
     text-align: left;
-    padding-left: 110px;
+    padding-left: 125px;
     vertical-align: top;
 }
 

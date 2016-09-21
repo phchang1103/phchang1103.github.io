@@ -216,7 +216,6 @@ header nav a {
 
    text-align: center;
    magin: 0 auto;
-   left: -20px;
    top: 0;
    height: 85px;
 
@@ -298,80 +297,57 @@ body {
 
 }
 
-#tableTitle {
-    position: absolute;
-    z-index: 5;
-    text-align: left;
-    margin-top: -26px;
-    margin-left: 135px;
-    margin-bottom: 0;
-    width: 1120px;
-    border-collapse: collapse;
+#titleFAQ {
+    margin: 0;
+    font-size: 36px;
+    color: black;
+    text-shadow: 1px 0px white, 0px 1px white, -1px 0px white, 0px -1px white,
+    1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white, 0 0 12px black;
 
 }
 
-#tableTitle tr td {
-    height: 135px;
-    margin-bottom: 0;
+.content h2 {
+    line-height: 5px;
+}
+
+#questionTable {
+    display: inline-block;
+    text-align: left;
+    width: 870px;
+    margin: 50px 0;
+
+}
+
+#Qmark {
+    width: 34px;
+    margin-right: 14px;
     vertical-align: bottom;
 }
 
-
-#subtitle {
-    font-size: 26px;
-    color: #5A0087;
+.Q {
+    font-size: 24px;
+    font-family: "微軟正黑體";
+    color: white;
     font-weight: 600;
-    text-shadow: 1px 0px white, 0px 1px white, -1px 0px white, 0px -1px white,
-    1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white, 0 0 10px black;
-
+    background-color: rgba(0, 90, 135, .5);
+    text-shadow:  0 0 6px black;
+    padding: 10px;
+    width: 870px;
+    margin: 5px 0;
 }
 
-#tableContent {
-    border-collapse: separate;
-    display: inline-block;
-    border-spacing: 100px 60px;
-    margin: 10px 0 0 0;
-}
-
-
-#tableContent tr td{
-    text-align: left;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 30px 20px 14px 30px;
-    border: 3px solid #D6BFE1;
-
-}
-
-#tableContent a {
-    color: inherit;
-    text-decoration: none;
-}
-
-#arrow1, #arrow2, #arrow3 {
-    display: inline;
-    color: #005A87;
-}
-
-#link1, #link2, #link3  {
-    display: inline;
-
-}
-
-#link1:hover, #arrow1:hover, #link2:hover, #arrow2:hover, #link3:hover, #arrow3:hover {
+.Q:hover {
+    background-color: #005A87;
     cursor: pointer;
 }
 
-
-#transferForm {
-    font-family: "微軟正黑體";
-    font-size: 18px;
-    font-weight: 600;
-    color: #C30027;
-    position: absolute;
-    margin-top: -35px;
-    margin-left: 340px;
-    z-index: 10;
-    text-decoration: none;
-
+.A {
+  font-size: 20px;
+  font-family: "微軟正黑體";
+  color: black;
+  font-weight: 600;
+  text-align: justify;
+  padding: 0px 60px;
+  height: 0;
+  overflow: hidden;
 }

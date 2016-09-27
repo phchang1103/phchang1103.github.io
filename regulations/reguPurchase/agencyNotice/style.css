@@ -298,54 +298,81 @@ body {
 
 }
 
-#title {
-    width: 250px;
-    margin: 0 0 35px 0;
-}
-
-#description {
-    border: 6px solid rgb(90, 135, 0);
-    text-align: left;
-    display: inline-block;
-    width: 1050px;
-    box-shadow: inset 0 0 25px 6px  rgba(0, 0, 0, .2), 0 0 25px 6px rgba(0, 0, 0, .2);
-    font-weight: 600;
-    font-size: 20px;
-}
-
-#description p {
+#titleNotice {
     margin: 0;
-}
-
-#description td{
-    vertical-align: top;
-    padding: 60px 35px 60px 55px;
-}
-
-
-#subTitle {
-    font-size: 26px;
-    color: #5A8700;
-    font-family: "微軟正黑體";
-    font-weight: 600;
+    font-size: 36px;
+    color: #C30027;
     text-shadow: 1px 0px white, 0px 1px white, -1px 0px white, 0px -1px white,
-    1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white, 0 0 10px black;
-    margin: 10px 0 -5px  -15px;
+    1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white, 0 0 12px black;
+
+}
+
+.content h2 {
+    line-height: 5px;
+}
+
+.content h4 {
+    line-height: 20px;
+    font-size: 18px;
+    color: #C30027;
+}
+
+.content h3 {
+    text-align: center;
+    font-size: 24px;
+
+}
+
+#goBack {
+    position: absolute;
+    display: block;
+    top: 340px;
+    width: 25px;
+    margin-left:52px;
+}
+
+#backText {
+    font-family: "微軟正黑體";
+    font-size: 22px;
+    font-weight: 600;
+    color: #5A0087;
+    position: absolute;
+    display: block;
+    top: 313px;
+    margin-left:87px;
+
+}
+
+.content table {
+    display: inline-block;
+    text-align: left;
+    margin: 30px 0 0 0 ;
+    font-size: 22px;
+    font-weight: 600;
+    color: #005A87;
+}
+
+.content table td {
+    width: 550px;
+    padding: 0 50px;
+    vertical-align: top;
 }
 
 #mark {
-    font-size: 26px;
-    display: inline;
     color: #C30027;
-    font-family: "微軟正黑體";
-    font-weight: 600;
-    text-shadow: 1px 0px white, 0px 1px white, -1px 0px white, 0px -1px white,
-    1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white, 0 0 10px black;
-
 }
 
-#separation {
-    width: 920px;
-    display: block;
-    margin: 30px 0 0 -10px;
+#background {
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+
+    top: 40px;
+    height: 830px;
+    margin-left: -30px;
+}
+
+#bgNotice {
+    width: 1350px;
 }

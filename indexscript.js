@@ -155,7 +155,7 @@ var pdHover = function() {
 
 	$('#pdSlider ul.pd li img').mouseover( function(){
 		var id = $(this).attr('id');
-		$('#pdSlider ul.tag #tag'+id).animate({opacity : 1, bottom : '60px'}, 400);
+		$('#pdSlider ul.tag #tag'+id).animate({opacity : 1, bottom : '59px'}, 400);
 		$('#pdSlider ul.tag #tag'+id).css('visibility', 'visible');
 	});
 

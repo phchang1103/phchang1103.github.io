@@ -41,29 +41,10 @@ var sidenav = function() {
 
 }
 
-var drawer = function() {
-     $('.Q').on('click', function() {
-       var targetA = $(this).next();
-
-       if ( targetA.height() == '0' ) {
-         $('.A').animate({height: 0}, 100, 'linear');
-         $('.A').animate({margin: 0}, 100, 'linear');
-         var autoHeight = targetA.css('height', 'auto').height();
-         targetA.animate({margin: '23px 0'}, 200, 'linear');
-         targetA.height(0).animate({height: autoHeight}, 200, 'linear');
-       }
-       else {
-         $('.A').animate({height: 0}, 100, 'linear');
-         $('.A').animate({margin: 0}, 100, 'linear');
-       }
-
-
-
-     });
+function goBack() {
+    window.history.back();
 }
-
 
 
 $(document).ready(scroll);
 $(document).ready(sidenav);
-$(document).ready(drawer);

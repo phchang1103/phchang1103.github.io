@@ -314,8 +314,8 @@ body {
     color: white;
     padding: 6px 19px;
     text-shadow: 0 0 6px black;
-    border-bottom: 2px solid #196DB4;
-    background-color: #196DB4;
+    border-bottom: 2px solid #005DAC;
+    background-color: #005DAC;
 }
 
 #annotation1 {
@@ -326,7 +326,7 @@ body {
     1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white, 0 0 8px black;
     padding: 0 12px 3px;
     vertical-align: bottom;
-    border-bottom: 2px solid #196DB4;
+    border-bottom: 2px solid #005DAC;
     color:#005DAC;
 }
 
@@ -370,8 +370,8 @@ body {
     color: white;
     padding: 6px 19px;
     text-shadow: 0 0 6px black;
-    border-bottom: 2px solid #199393;
-    background-color: #199393;
+    border-bottom: 2px solid #008787;
+    background-color: #008787;
 }
 
 #annotation2 {
@@ -511,9 +511,9 @@ body {
 }
 
 .subCateg1 {
-    margin-left: 180px;
+    margin-left: 150px;
     width: 150px;
-    color: #500DAC;
+    color: #005DAC;
 }
 
 #sub1-2 {
@@ -533,7 +533,7 @@ body {
 }
 
 .subCateg2 {
-    margin-left: 180px;
+    margin-left: 150px;
     width: 150px;
     color: #008787;
 }

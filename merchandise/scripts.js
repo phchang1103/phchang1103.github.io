@@ -103,9 +103,9 @@ var pdShow = function(i) {
 var subOption = function() {
   $('.superOption').on('click', function() {
     var id = $(this).attr('id');
-    $('.subCateg1').animate({opacity: 0, 'margin-left': 200, 'z-index': -1 },250, 'linear');
-    $('.subCateg2').animate({opacity: 0, 'margin-left': 200, 'z-index': -1 },250, 'linear');
-    $('#sub'+id).animate({opacity: 1, 'margin-left': 250, 'z-index': 2}, 500, 'linear');
+    $('.subCateg1').animate({opacity: 0, 'margin-left': 150, 'z-index': -1 },250, 'linear');
+    $('.subCateg2').animate({opacity: 0, 'margin-left': 150, 'z-index': -1 },250, 'linear');
+    $('#sub'+id).animate({opacity: 1, 'margin-left': 200, 'z-index': 2}, 500, 'linear');
   });
 
 }

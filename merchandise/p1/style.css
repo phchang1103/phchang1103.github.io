@@ -298,6 +298,16 @@ body {
 
 }
 
+.root {
+    font-family: "微軟正黑體";
+    font-size: 18px;
+    font-weight: 600;
+    text-indent: 90px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: black;
+}
+
 #thumbnails {
     margin-left: 50px;
     display: block;
@@ -468,4 +478,58 @@ body {
    background: linear-gradient(#ce2424, #f97779);
    border: solid 1px #be2424;
    box-shadow: inset 0 10px 15px 0 #bd2524;
+}
+
+#tabs {
+   list-style-type: none;
+   font-family: "微軟正黑體";
+   font-size: 26px;
+   font-weight: 600;
+   color: black;
+   margin-left: -604px;
+   margin-bottom: 0;
+   cursor: pointer;
+}
+
+.active-tab {
+   display: inline-block;
+   border: 2px solid black;
+   border-bottom: 4px solid #F4F4F4;
+   padding: 5px 10px;
+   margin-right: -6px;
+}
+
+.tab {
+   display: inline-block;
+   border-right: 1px solid #C0C0C0;
+   border-top: 1px solid #C0C0C0;
+   font-weight: 400;
+   padding: 5px 10px;
+   margin-right: -7px;
+}
+
+#fourTabs {
+   text-align: center;
+}
+
+#tabContent {
+   position: absolute;
+   z-index: -1;
+   width: 1050px;
+   text-align: left;
+   border-top: 2px solid black;
+   margin-top: -2px;
+   margin-left: 123px;
+   font-family: "微軟正黑體";
+   font-size: 22px;
+   color: black;
+   padding: 30px;
+}
+
+#style {
+   display: none;
+}
+
+#notice {
+   display: none;
 }

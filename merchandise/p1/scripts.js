@@ -48,8 +48,30 @@ var slider = function() {
       $(this).removeClass('nail').addClass('active-nail');
       $('.active-slide').removeClass('active-slide').addClass('slide');
       $('#p'+id).removeClass('slide').addClass('active-slide');
+    });
+}
 
-
+var tab = function() {
+    $('#tabs li').on('click', function() {
+      $('.active-tab').removeClass('active-tab').addClass('tab');
+      $(this).removeClass('tab').addClass('active-tab');
+      $('#tabInfo').css('border-left',  '1px solid #C0C0C0' );
+    });
+    $('#tabInfo').on('click', function() {
+      $('#tabInfo').css('border-left',  '2px solid black' );
+      $('#information').css('display', 'inline');
+      $('#style').css('display', 'none');
+      $('#notice').css('display', 'none');
+    });
+    $('#tabStyle').on('click', function() {
+      $('#style').css('display', 'inline');
+      $('#information').css('display', 'none');
+      $('#notice').css('display', 'none');
+    });
+    $('#tabNotice').on('click', function() {
+      $('#notice').css('display', 'inline');
+      $('#style').css('display', 'none');
+      $('#information').css('display', 'none');
     });
 }
 
@@ -58,3 +80,4 @@ var slider = function() {
 $(document).ready(scroll);
 $(document).ready(sidenav);
 $(document).ready(slider);
+$(document).ready(tab);

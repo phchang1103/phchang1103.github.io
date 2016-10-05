@@ -62,22 +62,55 @@ var tab = function() {
       $('#information').css('display', 'inline');
       $('#style').css('display', 'none');
       $('#notice').css('display', 'none');
+      $('#QA').css('display', 'none');
     });
     $('#tabStyle').on('click', function() {
       $('#style').css('display', 'inline');
       $('#information').css('display', 'none');
       $('#notice').css('display', 'none');
+      $('#QA').css('display', 'none');
     });
     $('#tabNotice').on('click', function() {
       $('#notice').css('display', 'inline');
       $('#style').css('display', 'none');
       $('#information').css('display', 'none');
+      $('#QA').css('display', 'none');
+    });
+    $('#tabQA').on('click', function() {
+      $('#notice').css('display', 'none');
+      $('#style').css('display', 'none');
+      $('#information').css('display', 'none');
+      $('#QA').css('display', 'inline');
     });
 }
 
+var QAbutton = function() {
+    $('#submit').click(function() {
+      var dt = new Date();
+      var time =  "(" + dt.getFullYear() + "-" +dt.getMonth() + "-" + dt.getDate() + " " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds() + ")";
+      $('#QAalert').append(' <div class="Qs"><span id="QAtype" style="font-weight:600;">問題：</span>測試測試~~~一行可以塞底色會隨著行數增加變寬~預設11</div> </br>');
+    });
+}
 
+//function allowReset() {
+    //return window.confirm("Go ahead and clear the form?");
+//}
+//function allowSend() {
+    //return window.confirm("Go ahead and mail this info?");
+//}
+var form = function() {
+$('#comment').keypress( function(event) {
+   if (event.which == 13) {
+      event.preventDefault();
+      var s = $(this).val();
+      $(this).val(s+"\n");
+   }
+})
+}
 
 $(document).ready(scroll);
 $(document).ready(sidenav);
 $(document).ready(slider);
 $(document).ready(tab);
+$(document).ready(QAbutton);
+$(document).ready(form);

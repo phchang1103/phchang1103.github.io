@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Website Design Practice | phchang</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type= "text/javascript" src= "scripts.js"></script>
+  <link href= "style.css" rel= "stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="../favicon/favicon-196x196.png" sizes="196x196" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="../favicon/mstile-144x144.png" />
+</head>
+
+<body>
+  <nav id = "sidenav">
+    <ul>
+      <li><a id = "closemenu">Close &times;</a></li>
+      <a href= "../regulations/regulations.html"><li><img src="../sidenav/regulations.png"></img>賣場規範</li></a>
+      <a href= "../merchandise/merchandise.html"><li><img src="../sidenav/products.png"></img>商品專區</li></a>
+      <a href= "../contact/contact.html"><li><img src="../sidenav/contact.png"></img>聯絡我們</li></a>
+      <a href= "../FAQ/FAQ.html"><li><img src="../sidenav/FAQ.png"></img>常見問題</li></a>
+      <a href= "../links/links.html"><li><img src="../sidenav/links.png"></img>相關連結</li></a>
+    </ul>
+    <img src="../LOGO.png" alt="logo" id="sideLogo"></img>
+  </nav>
+
+  <div id="wrapper">
+    <header>
+	      <a href="../index.html"><img src="../LOGO.png" id="logo" alt="Kosame_shop"></img></a>
+	      <nav>
+	        <ul>
+            <li><a href= "../regulations/regulations.html"><span class = "underline">賣場規範</span></a></li>
+		        <li><a href= "../merchandise/merchandise.html"><span class = "underline">商品專區</span></a></li>
+		        <li><a href= "../contact/contact.html"><span class = "underline">聯絡我們</span></a></li>
+		        <li><a href= "../FAQ/FAQ.html"><span class = "underline">常見問題</span></a></li>
+		        <li><a href= "../links/links.html"><span class = "underline">相關連結</span></a></li>
+	        </ul>
+	      </nav>
+      <div id="menu">&#9776;</div>
+    </header>
+
+  <div class = "content">
+    <h1 id="titleContact" alt="regulations">聯絡我們</h1>
+    <h2> ‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧  </h2>
+    <h4 style="color: #C30027"> 	&#9830;	想進一步了解商品或訂單資訊，或是任何相關問題與建議，歡迎您的來信 &#9830; </h4>
+    <h4 style="color: #C30027"> 	&#9830;	請填寫正確資訊並詳述問題，我們將盡速以E-mail回覆您 &#9830; </h4>
+    <div id="formContainer">
+        <form action="https://formspree.io/phchang1103@gmail.com" method="POST">
+          <table>
+            <tr>
+              <td style="text-align:right; vertical-align: top; width:210px; padding-top: 1px; line-height:28px;">
+            姓名：</br></br>
+            手機：</br></br>
+            E-mail：</br></br>
+            備用E-mail：</br></br>
+            問題類別：</br></br>
+            問題與建議：</br></br>
+              </td>
+              <td style="text-align:left; vertical-align: top; padding-top: 0;">
+            <input type="text" name="姓名" style="width: 140px;" autocomplete="on" required><sup style="font-size:14px; color: #C30027; text-shadow: none;"> *</sup><br>
+            <span id="subscript">（如為訂單問題，請務必填寫訂購人姓名）</span><br>
+            <input type="text" name="手機" style="width: 140px;" autocomplete="on"><br><br>
+            <input type="email" name="_replyto" style="width: 200px;" autocomplete="on" required><sup style="font-size:14px; color: #C30027; text-shadow: none;"> *</sup><br>
+            <span id="subscript">（請確認可以接收來自hotmail/gmail的信件）</span><br>
+            <input type="email" name="備用E-mail" style="width: 200px;" autocomplete="on"><br>
+            <span id="subscript">（為避免主信箱填寫錯誤或遭到擋信，請盡量填寫）</span><br>
+
+            <select name="問題類別" style="width: 140px; font-size: 14px;" required>
+                <option value="" disabled selected>請選擇問題類別</option>
+                <option value="商品資訊">商品資訊</option>
+                <option value="商品訂購">商品訂購</option>
+                <option value="商品寄送">商品寄送</option>
+                <option value="商品未收到">商品未收到</option>
+                <option value="收件資訊變更">收件資訊變更</option>
+                <option value="新品瑕疵">新品瑕疵</option>
+                <option value="付款問題">付款問題</option>
+                <option value="換貨申請">換貨申請</option>
+                <option value="退貨申請">退貨申請</option>
+                <option value="系統問題">系統問題</option>
+                <option value="其他">其他</option>
+            </select><sup style="font-size:14px; color: #C30027; text-shadow: none;"> *</sup><br><br>
+            <textarea name="問題或建議" maxlength="200" cols="45" rows="7" style="vertical-align: top;" required></textarea><sup style="font-size:14px; color: #C30027; text-shadow: none;"> *</sup><br>
+              </td>
+            </tr>
+          </table>
+          </br>
+          <input type="submit" value="送出" id="button1"><input type="reset" value="清除" id="button2">
+          <input type="hidden" name="_next" value="//index.html" />
+          <input type="hidden" name="_subject" value="雨ಌ坊│聯絡信件" />
+          <input type="text" name="_gotcha" style="display:none" />
+        </form>
+      </div>
+    </br>
+    </br>
+
+
+
+ </div>
+ <div id = "page-mask"></div>
+</body>
+
+</html>

@@ -135,13 +135,13 @@
           <div class="keyinQ">
             <span id="QAtype" style="font-weight:600;">提出問題</span>（在賣家回覆前，問題屬於未公開狀態，賣家可選擇是否答覆；賣家回覆後，才會公開顯示於頁面中。）</br>
             <form name="contactform" action="https://formspree.io/phchang1103@gmail.com" method="post" id="merchandiseQ"  onreset="return allowReset()" onsubmit="return allowSend()">
-            Name: &nbsp<input type="text" name="name" id="formName" style="margin-left:2px;"><br>
-            E-mail: &nbsp<input type="text" name="_replyto" id="formMail"><br>
-            Comment:<br>
-            <textarea rows="6" cols="111" name="message" id="comment" placeholder="為避免遭到有心人士的利用，請勿在此處留下任何涉及個資的訊息，以免造成不必要的麻煩及損失！" maxlength="250"></textarea><br>
+            姓名： &nbsp<input type="text" name="姓名" id="formName" style="margin-right:200px;" required>
+            E-mail： &nbsp<input type="email" name="_replyto" id="formMail" required><br>
+            問題：<br>
+            <textarea rows="6" cols="111" name="message" id="comment" placeholder="為避免遭到有心人士的利用，請勿在此處留下任何涉及個資的訊息，以免造成不必要的麻煩及損失！" maxlength="250" required></textarea><br>
             <span style="font-size: 14px;">（字數限制：250字元）</span></br>
-            <input type="hidden" name="_next" value="//site.io/thanks.html" />
-            <input type="hidden" name="_subject" value="雨ಌ坊★ACG Official Web Site│（商品名稱）商品問題" id="subject" />
+            <input type="hidden" name="_next" value="../../thankyou/merchanThankyou.html" />
+            <input type="hidden" name="_subject" value="雨ಌ坊│（商品名稱）商品問題" id="subject" />
             <input type="text" name="_gotcha" style="display:none" />
             <div style="text-align:center;">
             <input type="submit" value="送出問題" id="formSend">
@@ -149,14 +149,7 @@
             </div>
 
             </form>
-
-            </br></br>
           </div>
-        </br></br>
-        <div class="g-recaptcha" data-sitekey="6LdwKwgUAAAAABIsBWzTsjxy-MfyQzJPa0NNroX2"></div>
-        </div>
-
-
       </div>
 
 

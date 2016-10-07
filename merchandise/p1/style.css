@@ -414,7 +414,7 @@ body {
    padding:
 }
 
-#buttonMessage {
+#buttonMessage, #formReset {
    background: #99b6df;
    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#99b6df), to(#638ec8));
    background: -moz-linear-gradient(#99b6df, #638ec8);
@@ -428,7 +428,7 @@ body {
    margin-left: 10px;
 }
 
-#buttonMessage:hover {
+#buttonMessage:hover, #formReset:hover {
    background: #638ec8;
    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#638ec8), to(#99b6df));
    background: -moz-linear-gradient(#638ec8, #99b6df);
@@ -438,7 +438,7 @@ body {
    box-shadow: inset 0 0 0 1px #bbcfeb;
 }
 
-#buttonMessage:active {
+#buttonMessage:active, #formReset:active {
    background: #638ec8;
    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#638ec8), to(#99b6df));
    background: -moz-linear-gradient(#638ec8, #99b6df);
@@ -447,7 +447,7 @@ body {
    box-shadow: inset 0 10px 15px 0 #4176c4;
 }
 
-#buttonBuy {
+#buttonBuy, #formSend {
    background: #f97779;
    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f97779), to(#ce2424));
    background: -moz-linear-gradient(#f97779, #ce2424);
@@ -461,7 +461,7 @@ body {
    margin-left: 50px;
 }
 
-#buttonBuy:hover {
+#buttonBuy:hover, #formSend:hover {
    background: #ce2424;
    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ce2424), to(#f97779));
    background: -moz-linear-gradient(#ce2424, #f97779);
@@ -471,7 +471,7 @@ body {
    box-shadow: inset 0 0 0 1px #e67e7b;
 }
 
-#buttonBuy:active {
+#buttonBuy:active, #formSend:active {
    background: #ce2424;
    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ce2424), to(#f97779));
    background: -moz-linear-gradient(#ce2424, #f97779);
@@ -564,7 +564,7 @@ body {
 
 .keyinQ {
     width: 1050px;
-    height: 300px;
+    height: 360px;
     background-color: #D0D0D0;
     margin: -15px -30px;
     padding: 15px 30px;
@@ -583,11 +583,15 @@ body {
 }
 
 #submit {
-    font-family: "微軟正黑體";
-    font-size: 22px;
+  font-family: "微軟正黑體";
+  font-size: 22px;
     color: #C30027;
 }
 
-#formName, #formMail {
+#formSend, #formReset {
+    font-family: "微軟正黑體";
+    font-size: 18px;
+    padding: 5px 20px;
+    margin: 15px;
 
 }

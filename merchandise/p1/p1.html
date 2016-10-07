@@ -7,7 +7,11 @@
   <script type= "text/javascript" src= "scripts.js"></script>
   <link href= "style.css" rel= "stylesheet">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="../../favicon/favicon-196x196.png" sizes="196x196" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="../../favicon/mstile-144x144.png" />
 </head>
 
 <body>
@@ -135,12 +139,14 @@
             E-mail: &nbsp<input type="text" name="_replyto" id="formMail"><br>
             Comment:<br>
             <textarea rows="6" cols="111" name="message" id="comment" placeholder="為避免遭到有心人士的利用，請勿在此處留下任何涉及個資的訊息，以免造成不必要的麻煩及損失！" maxlength="250"></textarea><br>
-            <span style="font-size: 14px;">（字數限制：250字元）</span>
+            <span style="font-size: 14px;">（字數限制：250字元）</span></br>
             <input type="hidden" name="_next" value="//site.io/thanks.html" />
-            <input type="hidden" name="_subject" value="雨ಌ坊★ACG Official Web Site│（商品名稱）商品問題" />
+            <input type="hidden" name="_subject" value="雨ಌ坊★ACG Official Web Site│（商品名稱）商品問題" id="subject" />
             <input type="text" name="_gotcha" style="display:none" />
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
+            <div style="text-align:center;">
+            <input type="submit" value="送出問題" id="formSend">
+            <input type="reset" value="重新填寫" id="formReset">
+            </div>
 
             </form>
 

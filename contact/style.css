@@ -319,13 +319,13 @@ body {
 #formContainer {
     background-color: rgba(0,90,135, .2);
     width: 720px;
-    height:520px;
+    height:523px;
     display: inline-block;
 }
 
 
 form {
-    margin-top: 10px;
+    margin-top: 11px;
     display: inline-block;
     padding: 20px;
     font-family: "微軟正黑體";

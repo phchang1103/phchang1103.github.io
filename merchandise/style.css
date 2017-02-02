@@ -452,6 +452,9 @@ body {
 
 #pdBrowser li img {
     border: 2px solid #C0C0C0;
+    width: 250px
+    
+
 }
 
 #pdBrowser li img:hover {
